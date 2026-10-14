@@ -1,38 +1,25 @@
 export default function KontakPage() {
   return (
-    <main
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
-      <div
-        style={{
-          backgroundColor: "#f0f0f0",
-          borderRadius: "8px",
-          padding: "30px",
-          margin: "20px",
-        }}
-      >
-        <h1 style={{ color: "blue" }}>Kontak</h1>
-        <p style={{ color: "blue" }}>Ini adalah halaman kontak.</p>
-        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          <h2 style={{ color: "blue" }}>Informasi Kontak</h2>
+    <main className="max-w-3xl mx-auto px-6 py-12">
+      <div className="bg-slate-50 border border-slate-200 rounded-lg p-8 shadow-sm">
+        <h1 className="text-3xl font-bold text-slate-800 mb-4">Kontak</h1>
+        <p className="text-slate-600 mb-6">Ini adalah halaman kontak.</p>
+
+        <div className="flex flex-col gap-4">
+          <h2 className="text-xl font-semibold text-slate-700 border-b pb-2">Informasi Kontak</h2>
           <a
             href="https://www.instagram.com/madaniwave/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
+            className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
           >
-            Instagram
+            📸 Instagram: @madaniwave
           </a>
           <a
             href="mailto:daffamadani845@gmail.com"
-            className="text-blue-500 hover:underline"
+            className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
           >
-            Email
+            ✉️ Email: daffamadani845@gmail.com
           </a>
         </div>
       </div>
