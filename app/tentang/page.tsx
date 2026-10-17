@@ -1,27 +1,22 @@
 export default function TentangPage() {
   return (
-    <main
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
-      <div
-        style={{
-          padding: "20px",
-          backgroundColor: "#f0f0f0",
-          borderRadius: "8px",
-        }}
-      >
-        <h1 style={{ color: "blue" }}>About Me</h1>
-        <p style={{ color: "blue" }}>Ini adalah halaman tentang saya.</p>
-        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          <h2 style={{ color: "blue" }}>Informasi Pribadi</h2>
-          <p style={{ color: "blue" }}>Nama: Muhammad Daffa Madani</p>
-          <p style={{ color: "blue" }}>Asal: Bekasi, Indonesia tetapi sekarang saya tinggal di solo</p>
-          <p style={{ color: "blue" }}>Hobi: Boxing</p>
+    <main className="max-w-3xl mx-auto px-6 py-12">
+      <div className="bg-slate-50 border border-slate-200 rounded-lg p-8 shadow-sm">
+        <h1 className="text-3xl font-bold text-slate-800 mb-4">About Me</h1>
+        <p className="text-slate-600 mb-6">Ini adalah halaman tentang saya.</p>
+
+        <div className="flex flex-col gap-3">
+          <h2 className="text-xl font-semibold text-slate-700 border-b pb-2">Informasi Pribadi</h2>
+          <p className="text-slate-600">
+            <span className="font-medium text-slate-800">Nama:</span> Muhammad Daffa Madani
+          </p>
+          <p className="text-slate-600">
+            <span className="font-medium text-slate-800">Asal:</span> Bekasi, Indonesia (tinggal di
+            Solo)
+          </p>
+          <p className="text-slate-600">
+            <span className="font-medium text-slate-800">Hobi:</span> Boxing 🥊
+          </p>
         </div>
       </div>
     </main>
