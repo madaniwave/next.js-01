@@ -38,7 +38,7 @@
 //   );
 // }
 
-import DaftarTulisan from "./daftar-tulisan";
+import DaftarTulisan from "./_components/daftar-tulisan";
 
 export default function BlogPage() {
   const daftarTulisan = [

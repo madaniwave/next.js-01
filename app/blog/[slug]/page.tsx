@@ -15,7 +15,7 @@
 //   );
 // }
 
-import LikeButton from "./like-button";
+import LikeButton from "./_components/like-button";
 
 export default async function TulisanPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
